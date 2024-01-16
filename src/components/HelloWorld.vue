@@ -11,6 +11,9 @@
 
   <button @click="state.count++">count is: {{ state.count }}</button>
   <p>
+    <Multiselect />
+  </p>
+  <p>
     Edit
     <code>components/HelloWorld.vue</code> to test hot module replacement.
   </p>
@@ -18,6 +21,7 @@
 
 <script setup>
 import { defineProps, reactive } from 'vue'
+import Multiselect from "./Multiselect.vue";
 
 defineProps({
   msg: String
